@@ -340,27 +340,24 @@ td {
 }
 .toggle.toggle-arrow .toggle-line-first,
 body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line-first {
-  left: 50%;
   top: 2px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   width: 50%;
 }
 .toggle.toggle-arrow .toggle-line-middle,
 body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line-middle {
-  left: 2px;
   width: 90%;
 }
 .toggle.toggle-arrow .toggle-line-last,
 body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line-last {
-  left: 50%;
   top: -2px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   width: 50%;
 }
 .toggle.toggle-close .toggle-line-first,
 .sidebar-active .sidebar-toggle .toggle-line-first {
-  transform: rotate(-45deg);
   top: 5px;
+  transform: rotate(-45deg);
 }
 .toggle.toggle-close .toggle-line-middle,
 .sidebar-active .sidebar-toggle .toggle-line-middle {
@@ -368,8 +365,8 @@ body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line-last {
 }
 .toggle.toggle-close .toggle-line-last,
 .sidebar-active .sidebar-toggle .toggle-line-last {
-  transform: rotate(45deg);
   top: -5px;
+  transform: rotate(45deg);
 }
 /*
 
@@ -1457,11 +1454,11 @@ pre code {
   opacity: 0.8;
   position: fixed;
   z-index: 1300;
-  left: 30px;
+  right: 30px;
 }
 @media (max-width: 991px) {
   .sidebar-toggle {
-    left: 20px;
+    right: 20px;
   }
 }
 .sidebar-toggle:hover {
@@ -1667,12 +1664,12 @@ pre code {
   opacity: 0.8;
   position: fixed;
   z-index: 1300;
-  left: 30px;
+  right: 30px;
   width: 24px;
 }
 @media (max-width: 991px) {
   .back-to-top {
-    left: 20px;
+    right: 20px;
   }
 }
 .back-to-top:hover {
@@ -2542,14 +2539,14 @@ ul.breadcrumb li + li:last-child {
 }
 @media (min-width: 992px) {
   .sidebar-active {
-    padding-left: 320px;
+    padding-right: 320px;
   }
 }
 .sidebar {
-  left: -320px;
+  right: -320px;
 }
 .sidebar-active .sidebar {
-  left: 0;
+  right: 0;
 }
 .sidebar {
   background: #222;
@@ -2584,7 +2581,7 @@ ul.breadcrumb li + li:last-child {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #047c7d;
+  background: #eb0013;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
